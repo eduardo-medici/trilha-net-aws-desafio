@@ -1,7 +1,9 @@
 # RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS
 
 Data: 24/08/2025
+
 Empresa: Farma Red Cross
+
 Responsável: Eduardo Médici 
 
 ## Introdução
@@ -32,7 +34,8 @@ A seguir, serão descritas as etapas do projeto:
 - **Nome da ferramenta:** AWS Auto Scaling + EC2 + ELB
 - **Foco da ferramenta:** Dimensionamento automático de servidores de acordo com a demanda  
 - **Descrição de caso de uso:**
-  A junção do uso de EC2 + Auto Scaling + ELB mantém sistemas web e APIs estáveis, ajustando automaticamente a capacidade computacional conforme a demanda. Isso funciona pelo ajuste automático do número de instâncias, que aumenta quando a demanda sobe (ex: horário de pico de pedidos) e diminui quando a demanda cai, economizando custos. Pode-se realizar a integração com o ELB que redistribui as requisições conforme a necessidade. Exemplo de fluxo: Recebimento de pedidos aumenta às 12h → Auto Scaling cria novas instâncias EC2 → ELB distribui requisições → Após o pico, instâncias desnecessárias são encerradas automaticamente.
+  A junção do uso de EC2 + Auto Scaling + ELB mantém sistemas web e APIs estáveis, ajustando automaticamente a capacidade computacional conforme a demanda. Isso funciona pelo ajuste automático do número de instâncias, que aumenta quando a demanda sobe (ex: horário de pico de pedidos) e diminui quando a demanda cai, economizando custos. Pode-se realizar a integração com o ELB que redistribui as requisições conforme a necessidade.
+**Exemplo de fluxo:** Recebimento de pedidos aumenta às 12h → Auto Scaling cria novas instâncias EC2 → ELB distribui requisições → Após o pico, instâncias desnecessárias são encerradas automaticamente.
   1. **Redução de custos:** permite pagar apenas pelos recursos computacionais utilizados, evitando custos fixos altos em períodos de baixa demanda.  
   2. **Principal ganho:** alta disponibilidade e desempenho estável para aplicações críticas, como sistemas de pedidos e integração com farmácias e distribuidores.  
 
